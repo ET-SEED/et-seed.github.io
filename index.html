@@ -91,7 +91,7 @@
           <h1 class="title is-1 publication-title">T-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://t-seed.github.io">Anonymous Authors</a><sup></sup>,</span>
+              <a href="https://t-seed.github.io">Anonymous Authors<br></a></span>
             <span class="author-block">
 <!--             <span class="author-block">
               <a href="https://crtie.github.io">Chenrui Tie</a><sup></sup>,</span>
@@ -261,31 +261,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Imitation learning has demonstrated success in acquiring robot manipulation skills, 
+            but its reliance on extensive demonstrations and limited spatial generalization across
+            diverse object 6D poses are still significant challenges.
+            To address these limitations, we introduce T-SEED, a trajectory-level SE(3) equivariant
+            diffusion model for robot manipulation tasks. By leveraging SE(3) symmetries, T-SEED
+            enhances sample efficiency and spatial generalization while minimizing training complexity.
+            We theoretically extend equivariant Markov kernels and show that at least one equivariant
+            operation is necessary during the denoising process, significantly reducing training
+            difficulty. Our model integrates SE(3) diffusion process with SE(3) transformers,
+            ensuring end-to-end SE(3) equivariance in processing point cloud inputs. We evaluate
+            T-SEED on arrange of representative manipulation tasks, involving rigid body, articulated
+            object, and deformable object. Results demonstrate superior data efficiency, manipulation
+            success rates, and spatial generalization compared to baselines. Real-world experiments
+            further confirm our method’s ability to generalize to unseen configurations with
+            minimal demonstrations.
           </p>
         </div>
       </div>
