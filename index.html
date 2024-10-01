@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="T-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation">
   <meta name="keywords" content="Robotics Manipulation Equivariance">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>T-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -268,6 +268,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
             Imitation learning has demonstrated success in acquiring robot manipulation skills, 
@@ -295,6 +296,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
+        <hr style="margin-top:0px">
         <div class="publication-video">
           <iframe src=""
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -305,6 +307,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3"><br>Method</h2>
+        <hr style="margin-top:0px">
         <h3 class="title is-4">Full Pipeline</h3>
         <img src="./static/images/Pipline_v9.png">
       </div>
@@ -358,6 +361,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Results</h2>
+        <hr style="margin-top:0px">
 
         <p>
           We evaluate our method on standard robot manipulation tasks in both simulation and real 
@@ -392,14 +396,65 @@
             viewpoint such as a stabilized camera by playing back the training deformations.
           </p>
         </div> -->
+        <!-- <hr style="margin-top:0px"> -->
+        <div class="container is-max-desktop" style="display: flex;">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
+            <video id="replay-video"
+            controls
+            preload
+            playsinline
+            width="100%">
+            <source src="./static/videos/real1.mp4"
+               type="video/mp4">
+            </video>
+            <p class="is-bold"></p>
+          </div>
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
+            <video id="replay-video"
+            controls
+            preload
+            playsinline
+            width="100%">
+            <source src="./static/videos/real2.mp4"
+                  type="video/mp4">
+            </video>
+            <p class="is-bold"></p>
+          </div>
+        </div>
         <div class="column">
+          <div class="container is-max-desktop" style="display: flex;">
+            <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
+              <video id="replay-video"
+              controls
+              preload
+              playsinline
+              width="100%">
+              <source src="./static/videos/real3.mp4"
+                 type="video/mp4">
+              </video>
+              <p class="is-bold"></p>
+            </div>
+            <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
+              <video id="replay-video"
+              controls
+              preload
+              playsinline
+              width="100%">
+              <source src="./static/videos/real4.mp4"
+                    type="video/mp4">
+              </video>
+              <p class="is-bold"></p>
+            </div>
+          </div>
+        </div>
+          <!-- <div class="column">
           <video id="replay-video"
                  controls
                  muted
                  preload
                  playsinline
                  width="75%">
-            <source src="./static/videos/opendoor.mp4"
+            <source src="./static/videos/real1.mp4"
                     type="video/mp4">
           </video>
           <video id="replay-video"
@@ -408,10 +463,28 @@
                 preload
                 playsinline
                 width="75%">
-            <source src="./static/videos/clothfolding.mp4"
+            <source src="./static/videos/real2.mp4"
                       type="video/mp4">
-   </video>
-        </div>
+          </video>
+          <video id="replay-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="75%">
+            <source src="./static/videos/real3.mp4"
+                      type="video/mp4">
+          </video>
+          <video id="replay-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="75%">
+            <source src="./static/videos/real4.mp4"
+                      type="video/mp4">
+          </video>
+        </div> -->
         <!--/ Re-rendering. -->
 
       </div>
@@ -423,6 +496,7 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Projects</h2>
+        <hr style="margin-top:0px">
 
         <!-- <div class="content has-text-justified">
           <p>
@@ -479,7 +553,7 @@
       <div class="content has-text-centered">
         <div class="content">
           <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://unidoormanip.github.io">UniDoorManip</a>.
           </p>
         </div>
       </div>
