@@ -283,7 +283,7 @@
             T-SEED on arrange of representative manipulation tasks, involving rigid body, articulated
             object, and deformable object. Results demonstrate superior data efficiency, manipulation
             success rates, and spatial generalization compared to baselines. Real-world experiments
-            further confirm our method’s ability to generalize to unseen configurations with
+            further confirm our method's ability to generalize to unseen configurations with
             minimal demonstrations.
           </p>
         </div>
@@ -296,12 +296,19 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src=""
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <!--/ Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3"><br>Method</h2>
+        <h3 class="title is-4">Full Pipeline</h3>
+        <img src="./static/images/Pipline_v9.png">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -309,10 +316,10 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Visual Effects. -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -324,11 +331,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+      <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -344,66 +351,66 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Results</h2>
+
+        <p>
+          We evaluate our method on standard robot manipulation tasks in both simulation and real 
+          world settings. The results demonstrate that our approach out performs all baselines in 
+          terms of data efficiency and spatial generalization.
+        </p>
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
+        <h3 class="title is-4"><br>Simulation Results</h3>
+        <!-- <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
             frames. Use the slider here to linearly interpolate between the left frame and the right
             frame.
           </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
+        </div> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is full width">
+            <img src="./static/images/fig4.png"
                  class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+                 alt="Simulation Results"/>
           </div>
         </div>
         <br/>
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
+        <h3 class="title is-4">Real World Results</h3>
+        <!-- <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
             viewpoint such as a stabilized camera by playing back the training deformations.
           </p>
-        </div>
-        <div class="content has-text-centered">
+        </div> -->
+        <div class="column">
           <video id="replay-video"
                  controls
                  muted
                  preload
                  playsinline
                  width="75%">
-            <source src="./static/videos/replay.mp4"
+            <source src="./static/videos/calligraphy.mp4"
                     type="video/mp4">
           </video>
+          <video id="replay-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="75%">
+            <source src="./static/videos/clothfolding.mp4"
+                      type="video/mp4">
+   </video>
         </div>
         <!--/ Re-rendering. -->
 
@@ -415,9 +422,9 @@
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+        <h2 class="title is-3">Related Projects</h2>
 
-        <div class="content has-text-justified">
+        <!-- <div class="content has-text-justified">
           <p>
             There's a lot of excellent work that was introduced around the same time as ours.
           </p>
@@ -434,7 +441,7 @@
           <p>
             There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
     <!--/ Concurrent Work. -->
@@ -446,12 +453,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+    <!-- <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
-}</code></pre>
+}</code></pre> -->
+<pre><code></code></pre>
   </div>
 </section>
 
@@ -460,27 +468,18 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://openreview.net/notes/edits/attachment?id=pcfybmFAlE&name=pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://t-seed.github.io" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="content has-text-centered">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
           </p>
         </div>
       </div>
