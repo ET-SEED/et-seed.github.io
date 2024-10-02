@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ET-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation">
+        content="ET-SEED:Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy">
   <meta name="keywords" content="Robotics Manipulation Equivariance">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ET-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation</title>
+  <title>ET-SEED:Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -272,21 +272,17 @@
         <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
-            Imitation learning has demonstrated success in acquiring robot manipulation skills, 
-            but its reliance on extensive demonstrations and limited spatial generalization across
-            diverse object 6D poses are still significant challenges.
-            To address these limitations, we introduce ET-SEED, a trajectory-level SE(3) equivariant
-            diffusion model for robot manipulation tasks. By leveraging SE(3) symmetries, ET-SEED
-            enhances sample efficiency and spatial generalization while minimizing training complexity.
-            We theoretically extend equivariant Markov kernels and show that at least one equivariant
-            operation is necessary during the denoising process, significantly reducing training
-            difficulty. Our model integrates SE(3) diffusion process with SE(3) transformers,
-            ensuring end-to-end SE(3) equivariance in processing point cloud inputs. We evaluate
-            ET-SEED on arrange of representative manipulation tasks, involving rigid body, articulated
-            object, and deformable object. Results demonstrate superior data efficiency, manipulation
-            success rates, and spatial generalization compared to baselines. Real-world experiments
-            further confirm our method's ability to generalize to unseen configurations with
-            minimal demonstrations.
+            Imitation learning, e.g., diffusion policy, has proven effective in various robotic manipulation tasks. 
+            However, extensive demonstrations are required for policy robustness and generalization. 
+            To reduce the demonstration reliance, we leverage spatial symmetry and propose ET-SEED, an efficient 
+            trajectory-level SE(3) equivariant diffusion model for proposing action sequences in complex robot manipulation tasks. 
+            Further, previous equivariant diffusion models require the per-step equivariance in the Markov process, 
+            making it difficult to learn policy under such strong constraints. We theoretically extend equivariant
+            Markov kernels and simplify the condition of equivariant diffusion process, thereby significantly
+            improving training efficiency for trajectory-level SE(3) equivariant diffusion policy in an end-to-end manner. 
+            We evaluate ET-SEED on representative robotic manipulation tasks, involving rigid body, articulated and deformable object. 
+            Experiments demonstrate superior data efficiency and manipulation proficiency of our proposed method, 
+            as well as its ability to generalize to unseen configurations with only a few demonstrations. 
           </p>
         </div>
       </div>
